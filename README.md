@@ -2,9 +2,12 @@
 
 添加域名代理：
 curl --location --request GET 'http://proxy.local/proxy/add?domain=csf.proxy.local&port=8081&expire=24'
-domain: 想代理的内网域名,格式必须是*.xxx,如*.proxy.local
-port: 想代理的本地端口
-expire: 有效时间（小时），默认为12小时
+
+domain: 想代理的内网域名,格式必须是*.xxx,如*.proxy.local 
+
+port: 想代理的本地端口 
+
+expire: 有效时间（小时），默认为12小时 
 
 nginx配置：
     server {
